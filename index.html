@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Krisdiyansah – Portfolio | Mahasiswa Sistem Informasi & Admin SPX Express</title>
+  <meta name="description" content="Portfolio pribadi Krisdiyansah, mahasiswa Sistem Informasi Universitas Siber Asia yang juga bekerja sebagai Admin di SPX Express. Lihat profil, pengalaman, dan karya terbaik saya." />
+  <meta name="keywords" content="Krisdiyansah, portfolio, sistem informasi, universitas siber asia, SPX express, web developer, mahasiswa" />
+  <meta name="author" content="Krisdiyansah" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Krisdiyansah – Portfolio" />
+  <meta property="og:description" content="Mahasiswa Sistem Informasi & Admin SPX Express" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            grotesk: ['Space Grotesk', 'sans-serif'],
+          },
+          colors: {
+            primary: '#6366f1',
+            'primary-light': '#818cf8',
+            'primary-dark': '#4f46e5',
+            accent: '#06b6d4',
+            bg: '#0a0a0f',
+            card: '#12121c',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-bg font-inter">
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- Animated Background -->
+  <div class="bg-animated">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+  <div class="bg-grid"></div>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav id="navbar" class="navbar">
+    <div class="container-main">
+      <div class="navbar-inner">
+        <div class="logo">Portofolio Pribadi</div>
+
+        <!-- Desktop Nav -->
+        <ul class="nav-links">
+          <li><a href="#home" id="nav-home">Beranda</a></li>
+          <li><a href="#about" id="nav-about">Tentang</a></li>
+          <li><a href="#skills" id="nav-skills">Keahlian</a></li>
+          <li><a href="#experience" id="nav-experience">Pengalaman</a></li>
+          <li><a href="#portfolio" id="nav-portfolio">Portofolio</a></li>
+          <li><a href="#contact" id="nav-contact">Kontak</a></li>
+        </ul>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">🏠 Beranda</a>
+        <a href="#about">👤 Tentang</a>
+        <a href="#skills">⚡ Keahlian</a>
+        <a href="#experience">💼 Pengalaman</a>
+        <a href="#portfolio">🗂️ Portofolio</a>
+        <a href="#contact">📬 Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= HERO SECTION ======= -->
+  <section id="home" class="hero">
+    <div class="container-main">
+      <div class="hero-inner">
+
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Tersedia untuk Kolaborasi
+          </div>
+
+          <h1 class="hero-title">
+            Halo, Saya<br />
+            <span class="name-gradient">Krisdiyansah</span> 👋
+          </h1>
+
+          <p class="hero-subtitle">
+            <span id="typing-text" class="text-primary-light font-semibold"></span><span class="text-primary-light animate-pulse">|</span><br />
+            Passionate di bidang teknologi informasi, manajemen data, dan pengembangan sistem digital.
+          </p>
+
+          <div class="hero-tags">
+            <div class="hero-tag">
+              <span class="icon">🎓</span>
+              <span>Universitas Siber Asia</span>
+            </div>
+            <div class="hero-tag">
+              <span class="icon">📦</span>
+              <span>SPX Express</span>
+            </div>
+            <div class="hero-tag">
+              <span class="icon">📍</span>
+              <span>Jakarta, Indonesia</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn-primary" id="btn-view-portfolio">
+              <span>🗂️</span> Lihat Portofolio
+            </a>
+            <a href="#contact" class="btn-secondary" id="btn-contact-me">
+              <span>💬</span> Hubungi Saya
+            </a>
+          </div>
+
+          <!-- Scroll Indicator -->
+          <div class="scroll-indicator">
+            <div class="scroll-mouse">
+              <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll ke bawah</span>
+          </div>
+        </div>
+
+        <!-- Hero Photo -->
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring">
+            <img
+              src="potoformal.png"
+              alt="Foto Profil Krisdiyansah"
+              class="hero-photo"
+              id="hero-profile-photo"
+            />
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="photo-floating-badge badge-1">
+            🎓 Sistem Informasi
+          </div>
+          <div class="photo-floating-badge badge-2">
+            📦 Admin SPX Express
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT SECTION ======= -->
+  <section id="about">
+    <div class="container-main">
+      <div class="about-grid">
+
+        <!-- Photo Side -->
+        <div class="about-photo-wrap reveal">
+          <div class="about-photo-deco"></div>
+          <img
+            src="potoformal.png"
+            alt="Krisdiyansah - Mahasiswa Sistem Informasi"
+            class="about-photo"
+            id="about-profile-photo"
+          />
+        </div>
+
+        <!-- Content Side -->
+        <div class="reveal">
+          <div class="section-label">Tentang Saya</div>
+          <h2 class="section-title">
+            Mengenal Lebih Dekat <span class="underline-gradient">Krisdiyansah</span>
+          </h2>
+
+          <p class="section-desc mt-6">
+            Saya adalah mahasiswa aktif Jurusan Sistem Informasi di <strong>Universitas Siber Asia</strong>,
+            sekaligus bekerja sebagai <strong>Admin di SPX Express</strong> — salah satu perusahaan logistik terkemuka.
+            Kombinasi antara dunia akademik dan pengalaman kerja nyata membentuk saya menjadi individu yang
+            adaptif, terorganisir, dan berpikiran analitis.
+          </p>
+
+          <p class="section-desc mt-4">
+            Saya memiliki minat besar di bidang teknologi informasi, pengelolaan sistem data,
+            dan pengembangan digital. Selalu terbuka untuk belajar hal baru dan berkolaborasi
+            dalam proyek yang memberikan dampak positif.
+          </p>
+
+          <!-- Info Items -->
+          <div class="info-list mt-6">
+            <div class="info-item">
+              <div class="info-icon purple">🎓</div>
+              <div>
+                <div class="info-text-label">Pendidikan</div>
+                <div class="info-text-value">Universitas Siber Asia – S1 Sistem Informasi</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon cyan">📦</div>
+              <div>
+                <div class="info-text-label">Pekerjaan</div>
+                <div class="info-text-value">Admin – SPX Express</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon amber">🌐</div>
+              <div>
+                <div class="info-text-label">Lokasi</div>
+                <div class="info-text-value">Indonesia</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon green">✅</div>
+              <div>
+                <div class="info-text-label">Status</div>
+                <div class="info-text-value">Aktif Kuliah & Bekerja</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="about-stat-cards mt-6">
+            <div class="stat-card">
+              <div class="stat-num" data-count="3" data-suffix="+">0+</div>
+              <div class="stat-label">Tahun Pengalaman</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" data-count="10" data-suffix="+">0+</div>
+              <div class="stat-label">Proyek Selesai</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" data-count="5" data-suffix="+">0+</div>
+              <div class="stat-label">Teknologi Dikuasai</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" data-count="100" data-suffix="%">0%</div>
+              <div class="stat-label">Komitmen</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS SECTION ======= -->
+  <section id="skills">
+    <div class="container-main">
+      <div class="skills-header reveal">
+        <div class="section-label" style="justify-content: center;">Keahlian</div>
+        <h2 class="section-title">Teknologi & <span class="underline-gradient">Kemampuan</span></h2>
+        <p class="section-desc mt-4 mx-auto" style="text-align:center;">
+          Berbagai teknologi dan alat yang saya gunakan dalam pekerjaan sehari-hari dan proyek akademik.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill Cards -->
+        <div class="skill-card reveal">
+          <div class="skill-icon">🖥️</div>
+          <div class="skill-name">Microsoft Office</div>
+          <div class="skill-level">Expert</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-level="90"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">📊</div>
+          <div class="skill-name">Data Entry & Analisis</div>
+          <div class="skill-level">Expert</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-level="88"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🌐</div>
+          <div class="skill-name">HTML & CSS</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-level="70"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚡</div>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-level">Beginner-Inter</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-level="55"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗃️</div>
+          <div class="skill-name">Database (SQL)</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-level="65"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">📦</div>
+          <div class="skill-name">Manajemen Logistik</div>
+          <div class="skill-level">Expert</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-level="92"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔧</div>
+          <div class="skill-name">Sistem Informasi</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-level="72"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">🤝</div>
+          <div class="skill-name">Komunikasi & Tim</div>
+          <div class="skill-level">Expert</div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-level="95"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EXPERIENCE SECTION ======= -->
+  <section id="experience">
+    <div class="container-main">
+      <div class="reveal">
+        <div class="section-label">Perjalanan Saya</div>
+        <h2 class="section-title">Pendidikan & <span class="underline-gradient">Pengalaman</span></h2>
+        <p class="section-desc mt-4">
+          Jejak akademik dan profesional yang membentuk keahlian dan karakter saya.
+        </p>
+      </div>
+
+      <div class="timeline mt-16">
+
+        <!-- Item 1 – SPX Express (Active) -->
+        <div class="timeline-item">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Admin Perusahaan</div>
+                <div class="timeline-company">📦 SPX Express</div>
+              </div>
+              <div class="timeline-period">
+                <span>📅</span> 2023 – Sekarang
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Bertanggung jawab atas pengelolaan data administratif harian, koordinasi pengiriman paket,
+              verifikasi dokumen, input data sistem, dan memastikan kelancaran operasional di divisi administrasi.
+              Bekerja secara profesional dalam lingkungan logistik yang dinamis dan berorientasi target.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag-chip">Data Entry</span>
+              <span class="tag-chip">Koordinasi Tim</span>
+              <span class="tag-chip">Manajemen Dokumen</span>
+              <span class="tag-chip">Sistem Logistik</span>
+              <span class="tag-chip">Microsoft Office</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 – Universitas Siber Asia -->
+        <div class="timeline-item">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Mahasiswa S1 Sistem Informasi</div>
+                <div class="timeline-company">🎓 Universitas Siber Asia</div>
+              </div>
+              <div class="timeline-period">
+                <span>📅</span> 2024 – Sekarang
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Menempuh pendidikan S1 di program studi Sistem Informasi, mempelajari berbagai aspek
+              teknologi informasi meliputi analisis sistem, basis data, pemrograman web, jaringan komputer,
+              dan manajemen proyek IT. Aktif mengikuti perkuliahan online di era pendidikan digital.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag-chip">Sistem Informasi</span>
+              <span class="tag-chip">Database</span>
+              <span class="tag-chip">Pemrograman Web</span>
+              <span class="tag-chip">Analisis Sistem</span>
+              <span class="tag-chip">Jaringan Komputer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 – SMA  -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Pendidikan Menengah Atas</div>
+                <div class="timeline-company">🏫 SMA</div>
+              </div>
+              <div class="timeline-period">
+                <span>📅</span>Sebelum 2022
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Menyelesaikan pendidikan menengah dan mulai mengembangkan minat di bidang teknologi dan informasi,
+              yang menjadi fondasi untuk melanjutkan studi di Universitas Siber Asia.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag-chip">Fondasi Teknologi</span>
+              <span class="tag-chip">Komputer Dasar</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PORTFOLIO SECTION ======= -->
+  <section id="portfolio">
+    <div class="container-main">
+      <div class="portfolio-header reveal">
+        <div class="section-label" style="justify-content: center;">Karya Saya</div>
+        <h2 class="section-title">Proyek & <span class="underline-gradient">Portofolio</span></h2>
+        <p class="section-desc mt-4 mx-auto" style="text-align: center;">
+          Kumpulan proyek dan karya yang telah saya kerjakan selama masa studi dan pengembangan diri.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="portfolio-filter reveal">
+        <button class="filter-btn active" data-filter="all" id="filter-all">Semua</button>
+        <button class="filter-btn" data-filter="web" id="filter-web">Web Dev</button>
+        <button class="filter-btn" data-filter="data" id="filter-data">Data & Admin</button>
+        <button class="filter-btn" data-filter="academic" id="filter-academic">Akademik</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+
+        <div class="project-card" data-category="web">
+          <div class="project-thumb">
+            <div class="project-thumb-inner">🌐</div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="#" class="overlay-btn" id="proj1-demo">
+                  <span>👁️</span> Demo
+                </a>
+                <a href="#" class="overlay-btn" id="proj1-code">
+                  <span>💻</span> Kode
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Web Development</div>
+            <div class="project-title">Website Profil Pribadi</div>
+            <p class="project-desc">
+              Website portofolio responsif dengan desain modern menggunakan HTML, CSS, dan JavaScript untuk
+              menampilkan identitas dan karya secara profesional.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="data">
+          <div class="project-thumb">
+            <div class="project-thumb-inner">📊</div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="#" class="overlay-btn" id="proj2-view">
+                  <span>👁️</span> Lihat
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Data & Admin</div>
+            <div class="project-title">Sistem Pencatatan Data SPX</div>
+            <p class="project-desc">
+              Pengelolaan dan pembuatan laporan data pengiriman harian menggunakan Excel,
+              memastikan akurasi dan efisiensi proses administrasi logistik.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Microsoft Excel</span>
+              <span class="tech-badge">Data Analysis</span>
+              <span class="tech-badge">Reporting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="academic">
+          <div class="project-thumb">
+            <div class="project-thumb-inner">🗃️</div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="#" class="overlay-btn" id="proj3-view">
+                  <span>📄</span> Detail
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Akademik</div>
+            <div class="project-title">Desain Basis Data Perpustakaan</div>
+            <p class="project-desc">
+              Tugas akademik perancangan database relasional untuk sistem manajemen perpustakaan,
+              mencakup ERD, normalisasi, dan implementasi SQL.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">ERD</span>
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">Normalisasi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-thumb">
+            <div class="project-thumb-inner">🛒</div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="#" class="overlay-btn" id="proj4-demo">
+                  <span>👁️</span> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Web Development</div>
+            <div class="project-title">Halaman Landing Toko Online</div>
+            <p class="project-desc">
+              Desain UI/UX halaman landing produk dengan tampilan menarik,
+              navigasi responsif, dan animasi modern berbasis HTML/CSS.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">UI Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="academic">
+          <div class="project-thumb">
+            <div class="project-thumb-inner">📋</div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="#" class="overlay-btn" id="proj5-view">
+                  <span>📄</span> Detail
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Akademik</div>
+            <div class="project-title">Analisis Sistem Informasi Bisnis</div>
+            <p class="project-desc">
+              Laporan analisis kebutuhan sistem informasi untuk UMKM, mencakup
+              use case diagram, flowchart proses bisnis, dan rekomendasi solusi digital.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Analisis Sistem</span>
+              <span class="tech-badge">Use Case</span>
+              <span class="tech-badge">Flowchart</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="data">
+          <div class="project-thumb">
+            <div class="project-thumb-inner">📈</div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="#" class="overlay-btn" id="proj6-view">
+                  <span>👁️</span> Lihat
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category">Data & Admin</div>
+            <div class="project-title">Dashboard Laporan Bulanan</div>
+            <p class="project-desc">
+              Pembuatan dashboard visualisasi data menggunakan spreadsheet untuk memantau
+              kinerja dan tren pengiriman bulanan di kantor operasional SPX.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Excel</span>
+              <span class="tech-badge">Dashboard</span>
+              <span class="tech-badge">Visualisasi Data</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT SECTION ======= -->
+  <section id="contact">
+    <div class="container-main">
+      <div class="reveal" style="text-align:center; margin-bottom: 64px;">
+        <div class="section-label" style="justify-content:center;">Hubungi Saya</div>
+        <h2 class="section-title">Mari <span class="underline-gradient">Berkolaborasi</span></h2>
+        <p class="section-desc mt-4 mx-auto">
+          Punya proyek menarik atau ingin berdiskusi? Jangan ragu untuk menghubungi saya!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <a href="mailto:krisdiyansah@email.com" class="contact-card" id="contact-email">
+            <div class="contact-icon indigo">✉️</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">krisdiyansah@email.com</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/6287722588201" class="contact-card" target="_blank" id="contact-whatsapp">
+            <div class="contact-icon green">📱</div>
+            <div>
+              <div class="contact-label">WhatsApp</div>
+              <div class="contact-value">087722588201</div>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/krisdiyansah" class="contact-card" target="_blank" id="contact-linkedin">
+            <div class="contact-icon cyan">💼</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/krisdiyansah</div>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/krisdynsh?igsh=b2J6NHNsZmV3enVn&utm_source=qr" class="contact-card" target="_blank" id="contact-instagram">
+            <div class="contact-icon indigo">📸</div>
+            <div>
+              <div class="contact-label">Instagram</div>
+              <div class="contact-value">@kris.dynsh</div>
+            </div>
+          </a>
+          <a href="https://github.com/krisdiyansah" class="contact-card" target="_blank" id="contact-github">
+            <div class="contact-icon indigo">🐙</div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">krisdiyansah</div>
+            </div>
+          </a>
+
+          <!-- Quote Card -->
+          <div class="contact-card" style="background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(6,182,212,0.1)); border-color: rgba(99,102,241,0.3);">
+            <div style="font-size: 2rem;">💡</div>
+            <div>
+              <div class="contact-label">Motto Hidup</div>
+              <div class="contact-value" style="font-style:italic;">"Terus belajar, terus berkembang."</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="reveal">
+          <form class="contact-form" id="contactForm">
+            <h3 class="text-xl font-bold mb-6" style="color: var(--text-primary);">Kirim Pesan 💬</h3>
+
+            <div class="form-group">
+              <label class="form-label" for="form-name">Nama Lengkap</label>
+              <input
+                type="text"
+                id="form-name"
+                name="name"
+                class="form-input"
+                placeholder="Masukkan nama Anda..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-email">Email</label>
+              <input
+                type="email"
+                id="form-email"
+                name="email"
+                class="form-input"
+                placeholder="email@contoh.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-subject">Subjek</label>
+              <input
+                type="text"
+                id="form-subject"
+                name="_subject"
+                class="form-input"
+                placeholder="Perihal pesan Anda..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-message">Pesan</label>
+              <textarea
+                id="form-message"
+                name="message"
+                class="form-input"
+                placeholder="Tuliskan pesan Anda di sini..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="form-submit">
+              <span>🚀</span> Kirim Pesan
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <div class="container-main">
+      <div class="footer-logo">Krisdiyansah</div>
+
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;">
+        Mahasiswa Sistem Informasi & Admin SPX Express
+      </p>
+
+      <!-- Social Links -->
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/krisdiyansah" target="_blank" class="social-btn" id="footer-linkedin" title="LinkedIn">💼</a>
+        <a href="https://www.instagram.com/krisdynsh?igsh=b2J6NHNsZmV3enVn&utm_source=qr" target="_blank" class="social-btn" id="footer-instagram" title="Instagram">📸</a>
+        <a href="https://github.com/krisdiyansah" target="_blank" class="social-btn" id="footer-github" title="GitHub">🐙</a>
+        <a href="mailto:krisdiyansah@email.com" class="social-btn" id="footer-email" title="Email">✉️</a>
+        <a href="https://wa.me/6287722588201" class="social-btn" id="footer-whatsapp" title="WhatsApp">💬</a>
+      </div>
+
+      <div class="footer-copy">
+        <p>© 2026 <strong>Krisdiyansah</strong>.
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Kembali ke atas">↑</button>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
